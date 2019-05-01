@@ -1,0 +1,22 @@
+import random
+
+for x in range(1):
+
+    winning_num = random.randint(1,101)
+guess=1
+game_over=False 
+guess_num=int(input("guess any number b\w 1 to 100 \n")) 
+while not game_over:
+    if guess_num==winning_num:
+        print(f" congractualation you are win\n you guessed this number:{guess} time")
+        game_over=True
+    else:
+        print("unfotunality you are loss")
+        if guess_num>winning_num:
+            print("too high!!")
+           
+        else:
+            print("too low!!")
+        guess+=1
+        guess_num=int(input("guess again:"))
+  
